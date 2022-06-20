@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&family=Russo+One&display=swap");
+
+:root {
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  background-image: url("../images/bg.jpg");
+}
+
+ul {
+  list-style-type: none;
+}
