@@ -36,6 +36,7 @@ ul {
 p {
   color: var(--primary-text-color);
   line-height: var(--paragraph-line-height);
+  margin-bottom: var(--spacing-size);
 }
 
 img {
@@ -47,10 +48,11 @@ img {
 main {
   margin: var(--spacing-size);
 }
+
 header {
   padding: 0.8rem;
   padding-bottom: 0.25rem;
-  border-bottom: solid var(--border-size) var(--blood-red);
+  border-bottom: groove var(--border-size) var(--blood-red);
 }
 
 /* Colors */
@@ -74,18 +76,75 @@ header {
   justify-content: space-between;
   color: var(--primary-text-color);
   /* font-weight: bold; */
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
+.skills-list li::after {
+  content: " - ";
+}
+
+.skills-list li:last-child::after {
+  content: "";
+}
 .primary-header {
   background-color: var(--blood-red);
   color: var(--bg-color);
   border-radius: var(--border-radius);
   padding: var(--heading-padding);
-  box-shadow: 3px 3px 15px black;
+  box-shadow: 0 0 15px black;
   letter-spacing: var(--heading-letter-spacing);
+  margin-bottom: var(--spacing-size);
 }
 
 .secondary-header {
   letter-spacing: var(--heading-letter-spacing);
   font-size: 0.85rem;
+  padding-top: 7px;
+  /* border: solid 1px red; */
+  margin-bottom: var(--spacing-size);
+}
+
+/* fancy settings are for the circle things that appear on the left of the content */
+
+.fancy-container {
+  /* border: dashed 1px orange; */
+  display: flex;
+}
+
+.fancy-side {
+  width: calc(var(--border-size) + 25px);
+}
+
+.fancy-side.red {
+  border-left: groove var(--border-size) var(--blood-red);
+}
+
+.fancy-side.blue {
+  border-left: groove var(--border-size) var(--cga-cyan);
+}
+.fancy-side.dashed {
+  border-left-style: dotted;
+}
+.fancy-side::before {
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--bg-color);
+  display: inline-block;
+  border-radius: 500px;
+  transform: translateX(-58%);
+}
+
+.fancy-side.red::before {
+  border: groove 10px var(--blood-red);
+}
+
+.fancy-side.blue::before {
+  border: groove 10px var(--cga-cyan);
+}
+
+.inner-content {
+  /* border: dashed 1px red; */
+  width: 100%;
 }
