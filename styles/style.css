@@ -1,6 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&family=Russo+One&display=swap");
 
 :root {
+  /* colors */
+  --blood-red: #e2162e;
+  --cga-cyan: #39a4a9;
+  --primary-text-color: #c9c0cc;
+  --bg-color: #222430;
+
+  /* spacing and sizes */
+  --spacing-size: 1rem;
+  --border-size: 6px;
+  --paragraph-line-height: 1.5rem;
+  --main-heading-letter-spacing: 0.45rem;
+  --heading-letter-spacing: 0.15rem;
+  --heading-padding: 3px 15px;
+  --border-radius: 3px;
 }
 
 * {
@@ -17,4 +31,61 @@ body {
 
 ul {
   list-style-type: none;
+}
+
+p {
+  color: var(--primary-text-color);
+  line-height: var(--paragraph-line-height);
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: auto;
+}
+
+main {
+  margin: var(--spacing-size);
+}
+header {
+  padding: 0.8rem;
+  padding-bottom: 0.25rem;
+  border-bottom: solid var(--border-size) var(--blood-red);
+}
+
+/* Colors */
+.red-text {
+  color: var(--blood-red);
+}
+
+.blue-text {
+  color: var(--cga-cyan);
+}
+
+/* headings */
+.main-title {
+  text-transform: uppercase;
+  letter-spacing: var(--main-heading-letter-spacing);
+  font-size: 2.3rem;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-text-color);
+  /* font-weight: bold; */
+}
+
+.primary-header {
+  background-color: var(--blood-red);
+  color: var(--bg-color);
+  border-radius: var(--border-radius);
+  padding: var(--heading-padding);
+  box-shadow: 3px 3px 15px black;
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.secondary-header {
+  letter-spacing: var(--heading-letter-spacing);
+  font-size: 0.85rem;
 }
