@@ -67,7 +67,6 @@ header {
 
 .skills-list {
   color: var(--primary-text-color);
-  /* font-weight: bold; */
   font-weight: bold;
   padding: 0;
   margin-bottom: 0;
@@ -87,16 +86,16 @@ header {
   letter-spacing: var(--heading-letter-spacing);
   font-size: 0.85rem;
   padding-top: 7px;
-  /* border: solid 1px red; */
   margin-bottom: var(--spacing-size);
 }
 
 /* fancy settings are for the circle things that appear on the left of the content */
 
 .fancy-container {
-  /* border: dashed 1px orange; */
   display: flex;
 }
+
+/* fancy-side is just the single border that appears on the left */
 
 .fancy-side {
   width: calc(var(--border-size) + 25px);
@@ -112,6 +111,8 @@ header {
 .fancy-side.dashed {
   border-left-style: dotted;
 }
+
+/* the circle itself */
 .fancy-side::before {
   content: "";
   height: 15px;
@@ -130,8 +131,9 @@ header {
   border: groove 10px var(--cga-cyan);
 }
 
+/* content has to be placed inside of a div because the fancy-container 
+   is a flex box. */
 .inner-content {
-  /* border: dashed 1px red; */
   width: 100%;
 }
 
@@ -139,4 +141,22 @@ header {
   color: var(--primary-text-color);
   line-height: var(--paragraph-line-height);
   margin-bottom: var(--spacing-size);
+}
+
+.links-list {
+  display: flex;
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+li.link a {
+  color: var(--cga-cyan);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li.link a:visited {
+  color: var(--cga-cyan);
 }
