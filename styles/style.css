@@ -38,9 +38,17 @@ main {
   margin: var(--spacing-size) auto;
 }
 
+h4 {
+  border-bottom: dotted 5px var(--cga-cyan);
+  display: inline-block;
+  position: relative;
+  font-size: larger;
+}
+
 .inner-content p {
   margin: var(--spacing-size) 0;
 }
+
 header {
   padding: 0.8rem;
   /* padding-bottom: 0.25rem; */
@@ -79,11 +87,12 @@ header {
   box-shadow: 0 0 15px black;
   letter-spacing: var(--heading-letter-spacing);
   margin-bottom: var(--spacing-size);
+  font-size: 2rem;
 }
 
 .secondary-header {
   letter-spacing: var(--heading-letter-spacing);
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   padding-top: 7px;
   margin-bottom: var(--spacing-size);
 }
@@ -152,13 +161,13 @@ header {
   margin-bottom: var(--spacing-size);
 }
 
-li.link a {
+a {
   color: var(--cga-cyan);
   font-weight: bold;
   text-decoration: none;
 }
 
-li.link a:visited {
+a:visited {
   color: var(--cga-cyan);
 }
 
@@ -207,7 +216,7 @@ li.link a:visited {
   }
 
   .about-picture {
-    width: 300px;
+    width: 40%;
     margin: 0;
   }
   .with-image {
