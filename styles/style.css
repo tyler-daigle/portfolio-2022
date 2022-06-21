@@ -8,7 +8,7 @@
   --bg-color: #222430;
 
   /* spacing and sizes */
-  --spacing-size: 1rem;
+  --spacing-size: 2rem;
   --border-size: 6px;
   --paragraph-line-height: 1.5rem;
   --main-heading-letter-spacing: 0.45rem;
@@ -38,6 +38,9 @@ main {
   margin: var(--spacing-size) auto;
 }
 
+.inner-content p {
+  margin: var(--spacing-size) 0;
+}
 header {
   padding: 0.8rem;
   /* padding-bottom: 0.25rem; */
@@ -142,10 +145,10 @@ header {
 
 .links-list {
   display: flex;
-  padding-bottom: 5rem;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  margin-bottom: var(--spacing-size);
 }
 
 li.link a {
@@ -188,9 +191,28 @@ li.link a:visited {
   border-radius: 10px;
 }
 
+.about-picture {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: var(--spacing-size) auto;
+  border-radius: 5px;
+  box-shadow: 0 0 15px black;
+}
+
 @media (min-width: 750px) {
   .main-title {
     font-size: 5rem;
+  }
+
+  .about-picture {
+    width: 300px;
+    margin: 0;
+  }
+  .with-image {
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
   }
 }
 @media (min-width: 1000px) {
