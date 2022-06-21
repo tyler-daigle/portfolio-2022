@@ -41,7 +41,7 @@ main {
 header {
   padding: 0.8rem;
   /* padding-bottom: 0.25rem; */
-  border-bottom: groove var(--border-size) var(--blood-red);
+  border-bottom: solid var(--border-size) var(--blood-red);
 }
 
 /* Colors */
@@ -97,11 +97,11 @@ header {
 }
 
 .fancy-side.red {
-  border-left: groove var(--border-size) var(--blood-red);
+  border-left: solid var(--border-size) var(--blood-red);
 }
 
 .fancy-side.blue {
-  border-left: groove var(--border-size) var(--cga-cyan);
+  border-left: solid var(--border-size) var(--cga-cyan);
 }
 .fancy-side.dashed {
   border-left-style: dotted;
@@ -119,11 +119,11 @@ header {
 }
 
 .fancy-side.red::before {
-  border: groove 10px var(--blood-red);
+  border: solid 10px var(--blood-red);
 }
 
 .fancy-side.blue::before {
-  border: groove 10px var(--cga-cyan);
+  border: solid 10px var(--cga-cyan);
 }
 
 /* content has to be placed inside of a div because the fancy-container 
@@ -167,7 +167,6 @@ li.link a:visited {
 
 .image-container img {
   display: block;
-
   width: 300px;
   height: auto;
 }
