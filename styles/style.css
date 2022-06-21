@@ -10,7 +10,7 @@
   /* spacing and sizes */
   --spacing-size: 2rem;
   --border-size: 6px;
-  --paragraph-line-height: 1.5rem;
+  --paragraph-line-height: 1.8rem;
   --main-heading-letter-spacing: 0.45rem;
   --heading-letter-spacing: 0.15rem;
   --heading-padding: 3px 15px;
@@ -141,6 +141,7 @@ header {
   color: var(--primary-text-color);
   line-height: var(--paragraph-line-height);
   margin-bottom: var(--spacing-size);
+  font-size: 1.1rem;
 }
 
 .links-list {
@@ -200,7 +201,7 @@ li.link a:visited {
   box-shadow: 0 0 15px black;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 800px) {
   .main-title {
     font-size: 5rem;
   }
