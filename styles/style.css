@@ -56,6 +56,9 @@ header {
   margin-bottom: 2rem;
 }
 
+strong {
+  color: #f02457;
+}
 /* Colors */
 .red-text {
   color: var(--blood-red);
@@ -171,6 +174,20 @@ a:visited {
   color: var(--cga-cyan);
 }
 
+.regular-list {
+  /* list-style-type: disc; */
+  margin: 1rem;
+  padding-left: 1rem;
+}
+.regular-list li::before {
+  content: "📌 ";
+  color: #f02457;
+  font-weight: bold;
+}
+.regular-list li {
+  color: var(--primary-text-color);
+  margin-bottom: 1rem;
+}
 .image-container {
   display: flex;
   overflow-x: scroll;

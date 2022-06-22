@@ -21,7 +21,7 @@
       <div class="fancy-container">
         <div class="fancy-side red"></div>
         <div class="inner-content">
-          <section>
+          <section id="about-me">
             <h2 class="primary-header">ABOUT ME</h2>            
             <p>
               I am currently a retail worker making the transition to a career in web development as a front end developer. I am mostly self taught but I have attended some college in the past, focusing on computer science. 
@@ -67,9 +67,8 @@
                 AMATEUR RADIO PRACTICE EXAMS
               </h3>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-                mollitia assumenda obcaecati explicabo aspernatur! Officiis
-                fugit repellendus ex. Quasi.
+               I created the site <a href="https://amater-radio.school" target="_blank" rel="noopener noreferrer">amateur-radio.school</a> to
+               help people study for the amateur radio licensing exams. As I mentioned in the <a href="#about-me">about me</a> section above, I uploaded all the questions from the question pools to <strong>Contentful</strong>. I then created a front end for the site using <strong>React</strong>. For the styling I used <strong>Styled Components</strong>. The site is hosted on <strong>Netlify</strong>.
               </p>
               <div class="image-container">
                 <img
@@ -81,11 +80,23 @@
                   alt="amateur radio license practice screenshot main page"
                 />
               </div>
+
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
-                mollitia assumenda obcaecati explicabo aspernatur! Officiis
-                fugit repellendus ex. Quasi.
+                The user can choose between three different license levels for the exam they want to practice. The exams are then generated and the user can work their way through the test. The user is given a score at the end and notified if they pass or fail. The grading and the questions chosen are based on the requirements from the FCC. If you are interested you can read more at <a href="http://www.arrl.org/question-pools" target="_blank" rel="noopener noreferrer">arrl.org</a>.
               </p>
+              <p>
+                Like most of my projects, this is still a work in progress. There are a couple of things I want to change. The most difficult part was converting the questions to JSON and getting them into a CMS, and now that that is done creating any kind of front end is possible.</p>
+                <p>
+                I am planning on redoing the site using <strong>Next.JS</strong> rather than using Create React App. Using <strong>Next.Js</strong> will allow me to more easily generate the exams, right now they are generated each time a user starts an exam which can be slow at times.
+              </p>
+
+              <h4 class="blue-text">Some Other Features I Want To Add:</h4>
+              <ul class="regular-list">
+                <li>Ability for users to save progress in exams.</li>
+                <li>Marking questions wrong or right as the user takes the exam.</li>
+                <li>A summary of the wrong answers and links to help the user study.</li>
+                <li>User accounts.</li>
+              </ul>
             </section>
           </div>        
       </div>
