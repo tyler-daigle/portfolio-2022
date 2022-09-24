@@ -135,6 +135,13 @@
       <div class="inner-content">
         <section>
           <h3 class="secondary-header blue-text">Mini News Aggregator</h3>
+
+          <div class="screenshot-container">
+
+            <img src="images/screenshots/news-aggregator-screenshot.jpg" width="1000" height="845"
+              alt="News Aggregator Screenshot">
+          </div>
+
           <p>
             A project I am currently working on is a Mini News Aggregator. It uses Hygraph CMS (which used to be
             GraphCMS) to store
@@ -153,21 +160,31 @@
             embedded using Twitter's embedding option but that turned out to be too slow and caused the page to take
             forever to
             load. To fix this I created a custom Tweet component that grabs the data directly from the Twitter API and
-            wrote some
-            css to make it look the same as a real Tweet.
+            wrote some css to make it look the same as a real Tweet.
           </p>
+
+          <h4 class="blue-text">The Tweet component has several nice features:</h4>
+          <ul class="regular-list">
+            <li>Tweets are parsed and hashtags and mentions are correctly styled</li>
+            <li>It handles Tweets with and without media</li>
+            <li>Since it is built with NextJS it supports responsive images and lazy loading using NextJS' Image
+              component</li>
+          </ul>
+
 
           <p>
             I had a similar problem with the YouTube videos. Embedding videos causes a site to really slow down, so I
             ended up
-            using a small library called lite-youtube-embed. It reduces the amount of content needed until the video is
+            using a small library called <strong>lite-youtube-embed</strong>. It reduces the amount of content needed
+            until the video is
             actually
             played.
           </p>
 
           <p>
-            You can see a demo of the project at <a href="https://polite-taiyaki-3dfb29.netlify.app/" target="_blank"
-              rel="noopener noreferrer">netlify.app</a>. The project is still a <strong>work in progress</strong> so it
+            You can see a demo of the project hosted on <a href="https://polite-taiyaki-3dfb29.netlify.app/"
+              target="_blank" rel="noopener noreferrer">Netlify</a>. The project is still a <strong>work in
+              progress</strong> so it
             is
             going to continue to be updated and changed.
           </p>

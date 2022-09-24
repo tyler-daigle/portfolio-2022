@@ -197,6 +197,7 @@ a:visited {
   color: var(--primary-text-color);
   margin-bottom: 1rem;
 }
+
 .image-container {
   display: flex;
   overflow-x: scroll;
@@ -210,6 +211,18 @@ a:visited {
   display: block;
   width: 300px;
   height: auto;
+}
+
+.screenshot-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.screenshot-container img {
+  width: 100%;
+  height: auto;
+
+  box-shadow: 0 0 8px 5px black;
 }
 
 ::-webkit-scrollbar {
